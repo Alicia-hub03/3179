@@ -5,15 +5,15 @@
     "height": 400,
     "projection": {"type": "equalEarth"},
     "data": {
-        "url": "ne_1 (2).json",
+        "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Week9_homework/js/ne_1%20(2).json",
         "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
     },
     "transform": [
       {
-        "lookup": "properties.NAME",
+        "lookup": "properties.name",
         "from": {
           "data": {
-            "url": "data/aggregate_msia_state_tourism2023.csv" 
+            "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Week9_homework/data/aggregate_msia_state_tourism2023.csv" 
           },
           "key": "state",
           "fields": ["total_arrivals"]
@@ -28,7 +28,7 @@
         "scale": {"type": "log"}
       },
       "tooltip": [
-        {"field": "properties.NAME", "type": "nominal", "title": "State"},
+        {"field": "properties.name", "type": "nominal", "title": "State"},
         {"field": "total_arrivals", "type": "quantitative"}
       ]
     }

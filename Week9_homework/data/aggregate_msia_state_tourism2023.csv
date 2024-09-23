@@ -1,15 +1,15 @@
-"state","total_arrivals"
-"Johor",17211075
-"Kedah",1067038
-"Kelantan",547203
-"Melaka",56977
-"Negeri Sembilan",85615
-"Pahang",9211
-"Perak",229234
-"Perlis",686268
-"Pulau Pinang",1033007
-"Sabah",354341
-"Sarawak",1659515
-"Selangor",7553241
-"Terengganu",52
-"W.P. Labuan",22527
+state,total_arrivals,latitude,longitude
+Johor,17211075,1.527549,103.745476
+Kedah,1067038,6.155672,100.569649
+Kelantan,547203,6.125397,102.238068
+Melaka,56977,2.1944,102.2486
+Negeri Sembilan,85615,2.731813,102.252502
+Pahang,9211,3.974341,102.438057
+Perak,229234,4.69395,101.117577
+Perlis,686268,6.443589,100.216599
+Pulau Pinang,1033007,5.285153,100.456238
+Sabah,354341,5.420404,116.796783
+Sarawak,1659515,1.5575,110.3439
+Selangor,7553241,3.072751,101.423454
+Terengganu,52,5.3292,103.1361
+W.P. Labuan,22527,5.3,115.22
