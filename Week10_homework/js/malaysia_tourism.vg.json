@@ -16,7 +16,9 @@
       "data": {
         "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Week9_homework/data/aggregate_msia_state_tourism2023.csv"
       },
-      "mark": {"type": "circle"},
+      "mark": {
+        "type": "circle",
+        "opacity": 0.7},
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
@@ -31,20 +33,11 @@
           }
         },
         "color": {
-        "field": "total_arrivals",
-        "type": "quantitative",
-        "scale": {
-      "type": "threshold",
-      "domain": [100, 1000, 10000, 100000, 1000000, 10000000],
-      "scheme": "yelloworangered"
-    },
-        "legend": {
-          "title": "Total Tourist Arrivals"
-        }
+          "value": "orange"
       },
         "tooltip": [
                   {"field": "state", "type": "nominal", "title": "State"},
-                  {"field": "total_arrivals", "type": "quantitative", "title": "Total Tourist Arrivals"}
+                  {"field": "total_arrivals", "type": "quantitative", "title": "Total Tourist Arrivals", "format":"," }
               ]
       }
     }

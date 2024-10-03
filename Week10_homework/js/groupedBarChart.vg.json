@@ -28,7 +28,7 @@
                     "Europe",
                     "Africa",
                     "Asia",
-                    "Oceania/Australia",
+                    "Oceania",
                     "Antarctica"
                 ],
                 "labels": [
@@ -38,7 +38,7 @@
                     "Europe",
                     "Africa",
                     "Asia",
-                    "Oceania/Australia",
+                    "Oceania",
                     "Antarctica"
                 ],
                 "name": "Region Selection: "
@@ -47,18 +47,17 @@
         ],
         "transform": [
                 {"filter":"Region_selection == null || datum.continent == Region_selection"},
-                {"filter":"Year_selection == 2020 || datum.year == Year_selection"}
+                { "filter": "datum.year == Year_selection" }
             ],
         "mark": { "type": "bar" },
         "encoding": {
             "y": { "field": "state", "type": "nominal" },
             "x": { "aggregate": "sum", "field": "arrivals" },
-            "color": { "field": "continent" },
+            "color": { "field": "continent"},
             "tooltip": [
                 {"field": "state", "type": "nominal", "title": "State"},
-                {"field": "continent", "type": "nominal", "title": "Continent"}
-                
+                {"field": "continent", "type": "nominal", "title": "Continent"}                
             ]
-            }
+        }
 }
         
