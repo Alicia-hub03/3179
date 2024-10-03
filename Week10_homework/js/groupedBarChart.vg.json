@@ -1,13 +1,64 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Malaysia State Popularity by Tourist Nationality",
-    "width": 800,
-    "height": 600,
-    "data": { "url": "data/cleanedSOE.csv" },
-    "mark": { "type": "bar" },
-    "encoding": {
-        "x": { "timeUnit": "year", "field": "date", "type": "ordinal" },
-        "y": { "aggregate": "sum", "field": "arrivals" },
-        "color": { "field": "continent" }
-    }
+    "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Week10_homework/data/cleanedSOE.csv" },
+
+            "title": "Malaysia State Popularity by Tourist Nationality",
+        "width": 800,
+        "height": 600,
+        "params": [
+            {
+                "name": "Year_selection",
+                "value": 2020,
+                "bind": {
+                    "input": "range",
+                    "min": 2020,
+                    "max": 2023,
+                    "step": 1,
+                    "name": "Year:  "
+                }
+            },
+            {
+                "name": "Region_selection",
+                "bind": {
+                "input": "select",
+                "options": [
+                    null,
+                    "South America",
+                    "North America",
+                    "Europe",
+                    "Africa",
+                    "Asia",
+                    "Oceania/Australia",
+                    "Antarctica"
+                ],
+                "labels": [
+                    "Show All",
+                    "South America",
+                    "North America",
+                    "Europe",
+                    "Africa",
+                    "Asia",
+                    "Oceania/Australia",
+                    "Antarctica"
+                ],
+                "name": "Region Selection: "
+                }
+            }
+        ],
+        "transform": [
+                {"filter":"Region_selection == null || datum.continent == Region_selection"},
+                {"filter":"Year_selection == 2020 || datum.year == Year_selection"}
+            ],
+        "mark": { "type": "bar" },
+        "encoding": {
+            "y": { "field": "state", "type": "nominal" },
+            "x": { "aggregate": "sum", "field": "arrivals" },
+            "color": { "field": "continent" },
+            "tooltip": [
+                {"field": "state", "type": "nominal", "title": "State"},
+                {"field": "continent", "type": "nominal", "title": "Continent"}
+                
+            ]
+            }
 }
+        
