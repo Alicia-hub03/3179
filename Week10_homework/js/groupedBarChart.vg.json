@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Week10_homework/data/cleanedSOE.csv" },
 
-            "title": "Malaysia State Popularity by Tourist Nationality",
+            "title": "Continental Trends in Tourist Arrivals: A 2020-2023 Overview",
         "width": 800,
         "height": 600,
         "params": [
@@ -49,15 +49,93 @@
                 {"filter":"Region_selection == null || datum.continent == Region_selection"},
                 { "filter": "datum.year == Year_selection" }
             ],
-        "mark": { "type": "bar" },
         "encoding": {
-            "y": { "field": "state", "type": "nominal" },
-            "x": { "aggregate": "sum", "field": "arrivals" },
-            "color": { "field": "continent"},
+            "y": { "field": "state", "type": "nominal", "title": "State" },
+            "x": { "aggregate": "sum", "field": "arrivals", "title": "Total Arrivals"  },
             "tooltip": [
                 {"field": "state", "type": "nominal", "title": "State"},
-                {"field": "continent", "type": "nominal", "title": "Continent"}                
+                {"field": "continent", "type": "nominal", "title": "Continent"},
+                {"aggregate": "sum", "field": "arrivals", "type": "quantitative", "title": "Total Arrivals", "format": ","}              
             ]
-        }
+
+        },
+        "layer": [
+            { "mark": "bar",
+              "encoding": {
+              "color": { 
+                "field": "continent", 
+                "type": "nominal", 
+                "title": "Continent" ,
+                "scale": {
+                    "domain": ["South America", "North America", "Europe", "Africa", "Asia", "Oceania", "Antarctica"],
+                    "range": ["#ee9696", "#a6cee3", "#377eb8", "#f1c264", "#ff7f00", "#91cdcb", "#37b8b4"]
+                 }
+                }
+                } 
+            },
+            {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "baseline": "middle",
+                  "dx": 0, 
+                  "dy": 0,
+                  "fontWeight": "normal"
+                },
+                "encoding": {
+                    "x": {
+                    "value": 700
+                  },
+                  "y": {
+                    "value": 50
+                  },
+                  "text": {"condition": {"test": "Region_selection == 'Asia' && datum['state'] == 'Johor' && Year_selection != '2021'", "value": ["Johor has the highest ", "number of tourist ", "from Asia except in 2021."]}},
+                  "color": {"value": "black"},
+                  "opacity": {"condition": {"test": "Year_selection != '2021'", "value": 1}, "value": 0}
+                }
+            },
+            {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "baseline": "middle",
+                  "dx": 0, 
+                  "dy": 0,
+                  "fontWeight": "normal"
+                },
+                "encoding": {
+                    "x": {
+                    "value": 700
+                  },
+                  "y": {
+                    "value": 60
+                  },
+                  "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Johor' && Year_selection != '2021'", "value": ["Johor has the highest ", "number of tourist overall,", "except in 2021."]}},
+                  "color": {"value": "black"},
+                  "opacity": {"condition": {"test": "Region_selection == null", "value": 1}, "value": 0}
+                }
+            },
+            {
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "baseline": "middle",
+                  "dx": 0, 
+                  "dy": 0,
+                  "fontWeight": "normal"
+                },
+                "encoding": {
+                    "x": {
+                    "value": 350
+                  },
+                  "y": {
+                    "value": 520
+                  },
+                  "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Johor'", "value": ["Selangor is the second highest", "number of tourist overall","across different continents"]}},
+                  "color": {"value": "black"},
+                  "opacity": {"condition": {"test": "Region_selection == null", "value": 1}, "value": 0}
+                }
+            }
+            
+        ]
 }
-        
