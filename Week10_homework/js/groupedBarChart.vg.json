@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Malaysia State Popularity by Tourist Nationality",
+    "width": 800,
+    "height": 600,
+    "data": { "url": "data/cleanedSOE.csv" },
+    "mark": { "type": "bar" },
+    "encoding": {
+        "x": { "timeUnit": "year", "field": "date", "type": "ordinal" },
+        "y": { "aggregate": "sum", "field": "arrivals" },
+        "color": { "field": "continent" }
+    }
+}
