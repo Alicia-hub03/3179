@@ -54,7 +54,7 @@
             "x": { "aggregate": "sum", "field": "arrivals", "title": "Total Arrivals"  },
             "tooltip": [
                 {"field": "state", "type": "nominal", "title": "State"},
-                {"field": "continent", "type": "nominal", "title": "Continent"},
+                {"field": "continent", "type": "nominal", "title": "Tourist from Continent"},
                 {"aggregate": "sum", "field": "arrivals", "type": "quantitative", "title": "Total Arrivals", "format": ","}              
             ]
 
@@ -101,7 +101,7 @@
                   "baseline": "middle",
                   "dx": 0, 
                   "dy": 0,
-                  "fontWeight": "normal"
+                  "fontWeight": "lighter"
                 },
                 "encoding": {
                     "x": {
@@ -112,7 +112,7 @@
                   },
                   "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Johor' && Year_selection != '2021'", "value": ["Johor has the highest ", "number of tourist overall,", "except in 2021."]}},
                   "color": {"value": "black"},
-                  "opacity": {"condition": {"test": "Region_selection == null", "value": 1}, "value": 0}
+                  "opacity": {"condition": {"test": "Region_selection == null && datum['state'] == 'Johor' && Year_selection != '2021'", "value": 1}, "value": 0}
                 }
             },
             {
@@ -122,7 +122,7 @@
                   "baseline": "middle",
                   "dx": 0, 
                   "dy": 0,
-                  "fontWeight": "normal"
+                  "fontWeight": "lighter"
                 },
                 "encoding": {
                     "x": {
@@ -131,9 +131,9 @@
                   "y": {
                     "value": 520
                   },
-                  "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Johor'", "value": ["Selangor is the second highest", "number of tourist overall","across different continents"]}},
+                  "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Selangor'", "value": ["Selangor is the second highest", "number of tourist overall","across different continents"]}},
                   "color": {"value": "black"},
-                  "opacity": {"condition": {"test": "Region_selection == null", "value": 1}, "value": 0}
+                  "opacity": {"condition": {"test": "Region_selection == null && datum['state'] == 'Selangor'", "value": 1}, "value": 0}
                 }
             }
             
