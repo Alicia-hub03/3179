@@ -5,9 +5,22 @@
     "width": 800,
     "height": 450,
     "params": [
-        
+        {
+            "name": "Year_selection",
+            "value": 2020,
+            "bind": {
+                "input": "range",
+                "min": 2020,
+                "max": 2023,
+                "step": 1,
+                "name": "Year:  "
+            }
+        }
     ],
     "mark": {"type": "rect", "strokeWidth": 2},
+    "transform": [
+                { "filter": "datum.year == Year_selection" }
+            ],
     "encoding": {
         "x": {
             "field": "state",
