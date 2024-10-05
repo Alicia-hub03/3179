@@ -1,16 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/cleanedSOE.csv" },
+    "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state.csv" },
     "title": "Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State",
     "width": 800,
     "height": 450,
-    "transform": [
-        {
-        "aggregate": [{"op": "sum", "as": "num_tourist"}],
-        "groupby": ["month", "state"]
-        }
-    ], 
-    "selection": {"highlight": {"type": "single"}},
+    "params": [
+        
+    ],
     "mark": {"type": "rect", "strokeWidth": 2},
     "encoding": {
         "x": {
@@ -20,41 +16,23 @@
         },
         "y": {
             "field": "month",
-            "timeUnit": "month",
             "type": "ordinal",
             "title": "Month"
         },
         "fill": {
-          "field": "num_tourist",
+          "field": "total_arrivals",
           "type": "quantitative",
           "title": "Number of Tourist"
         },
         "tooltip": [
             {"field": "state", "type": "nominal", "title": "State"},
             {
-                "field": "num_tourist",
+                "field": "total_arrivals",
                 "type": "quantitative",
                 "title": "Number of Tourist"
             },
-            {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"}
-        ],
-        "stroke": {
-            "condition": {
-              "test": {
-                "and": [
-                  {"selection": "highlight"},
-                  "length(data(\"highlight_store\"))"
-                ]
-              },
-              "value": "black"
-            },
-            "value": null
-          },
-          "opacity": {
-            "condition": {"selection": "highlight", "value": 1},
-            "value": 0.5
-          },
-          "order": {"condition": {"selection": "highlight", "value": 1}, "value": 0}
+            {"field": "month","type": "ordinal", "title": "Month"}
+        ]
     },
     "config": {
         "scale": {"bandPaddingInner": 0, "bandPaddingOuter": 0},
