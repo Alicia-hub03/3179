@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/cleanedSOE.csv" },
+    "title": "Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State",
+    "width": 800,
+    "height": 450,
+    "transform": [
+        {
+        "aggregate": [{"op": "sum", "as": "num_tourist"}],
+        "groupby": ["month", "state"]
+        }
+    ], 
+    "selection": {"highlight": {"type": "single"}},
+    "mark": {"type": "rect", "strokeWidth": 2},
+    "encoding": {
+        "x": {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+        },
+        "y": {
+            "field": "month",
+            "timeUnit": "month",
+            "type": "ordinal",
+            "title": "Month"
+        },
+        "fill": {
+          "field": "num_tourist",
+          "type": "quantitative",
+          "title": "Number of Tourist"
+        },
+        "tooltip": [
+            {"field": "state", "type": "nominal", "title": "State"},
+            {
+                "field": "num_tourist",
+                "type": "quantitative",
+                "title": "Number of Tourist"
+            },
+            {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"}
+        ],
+        "stroke": {
+            "condition": {
+              "test": {
+                "and": [
+                  {"selection": "highlight"},
+                  "length(data(\"highlight_store\"))"
+                ]
+              },
+              "value": "black"
+            },
+            "value": null
+          },
+          "opacity": {
+            "condition": {"selection": "highlight", "value": 1},
+            "value": 0.5
+          },
+          "order": {"condition": {"selection": "highlight", "value": 1}, "value": 0}
+    },
+    "config": {
+        "scale": {"bandPaddingInner": 0, "bandPaddingOuter": 0},
+        "view": {"step": 40},
+        "range": {"ramp": {"scheme": "yellowgreenblue"}},
+        "axis": {
+          "domain": false,
+          "grid": true,
+          "tickBand": "extent"
+        }
+      }
+}

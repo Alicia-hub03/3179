@@ -2,9 +2,9 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Week10_homework/data/cleanedSOE.csv" },
 
-            "title": "Continental Trends in Tourist Arrivals across the Malaysian States: A 2020-2023 Overview",
+        "title": "Continental Trends in Tourist Arrivals across the Malaysian States: A 2020-2023 Overview",
         "width": 800,
-        "height": 600,
+        "height": 450,
         "params": [
             {
                 "name": "Year_selection",
@@ -87,7 +87,7 @@
                     "value": 700
                   },
                   "y": {
-                    "value": 50
+                    "value": 40
                   },
                   "text": {"condition": {"test": "Region_selection == 'Asia' && datum['state'] == 'Johor' && Year_selection != '2021'", "value": ["Johor has the highest ", "number of tourist ", "from Asia except in 2021."]}},
                   "color": {"value": "black"},
@@ -108,7 +108,7 @@
                     "value": 700
                   },
                   "y": {
-                    "value": 60
+                    "value": 40
                   },
                   "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Johor' && Year_selection != '2021'", "value": ["Johor has the highest ", "number of tourist overall,", "except in 2021."]}},
                   "color": {"value": "black"},
@@ -129,7 +129,7 @@
                     "value": 350
                   },
                   "y": {
-                    "value": 520
+                    "value": 400
                   },
                   "text": {"condition": {"test": "Region_selection == null && datum['state'] == 'Selangor'", "value": ["Selangor is the second highest", "number of tourist overall","across different continents"]}},
                   "color": {"value": "black"},

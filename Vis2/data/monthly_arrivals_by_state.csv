@@ -1,0 +1,583 @@
+"state","year","month","total_arrivals"
+"Johor","2020","Jan",1621342
+"Johor","2020","Feb",1093393
+"Johor","2020","Mar",669730
+"Johor","2020","Apr",296
+"Johor","2020","May",221
+"Johor","2020","Jun",387
+"Johor","2020","Jul",811
+"Johor","2020","Aug",831
+"Johor","2020","Sep",1314
+"Johor","2020","Oct",1154
+"Johor","2020","Nov",1017
+"Johor","2020","Dec",947
+"Johor","2021","Jan",752
+"Johor","2021","Feb",819
+"Johor","2021","Mar",932
+"Johor","2021","Apr",842
+"Johor","2021","May",447
+"Johor","2021","Jun",134
+"Johor","2021","Jul",197
+"Johor","2021","Aug",185
+"Johor","2021","Sep",206
+"Johor","2021","Oct",306
+"Johor","2021","Nov",620
+"Johor","2021","Dec",3185
+"Johor","2022","Jan",4815
+"Johor","2022","Feb",3236
+"Johor","2022","Mar",8338
+"Johor","2022","Apr",435627
+"Johor","2022","May",709739
+"Johor","2022","Jun",943070
+"Johor","2022","Jul",1125824
+"Johor","2022","Aug",1122204
+"Johor","2022","Sep",1202300
+"Johor","2022","Oct",1207865
+"Johor","2022","Nov",1214494
+"Johor","2022","Dec",1395453
+"Johor","2023","Jan",1233914
+"Johor","2023","Feb",1095887
+"Johor","2023","Mar",1301505
+"Johor","2023","Apr",1227282
+"Johor","2023","May",1298449
+"Johor","2023","Jun",1510258
+"Johor","2023","Jul",1545876
+"Johor","2023","Aug",1510402
+"Johor","2023","Sep",1599473
+"Johor","2023","Oct",1575576
+"Johor","2023","Nov",1558357
+"Johor","2023","Dec",1753136
+"Kedah","2020","Jan",85055
+"Kedah","2020","Feb",64404
+"Kedah","2020","Mar",37164
+"Kedah","2020","Apr",13837
+"Kedah","2020","May",12924
+"Kedah","2020","Jun",11743
+"Kedah","2020","Jul",10020
+"Kedah","2020","Aug",10339
+"Kedah","2020","Sep",9295
+"Kedah","2020","Oct",9606
+"Kedah","2020","Nov",10592
+"Kedah","2020","Dec",14207
+"Kedah","2021","Jan",17928
+"Kedah","2021","Feb",16131
+"Kedah","2021","Mar",19205
+"Kedah","2021","Apr",17851
+"Kedah","2021","May",18426
+"Kedah","2021","Jun",16891
+"Kedah","2021","Jul",17481
+"Kedah","2021","Aug",16343
+"Kedah","2021","Sep",18833
+"Kedah","2021","Oct",19383
+"Kedah","2021","Nov",18318
+"Kedah","2021","Dec",18257
+"Kedah","2022","Jan",18605
+"Kedah","2022","Feb",16919
+"Kedah","2022","Mar",20277
+"Kedah","2022","Apr",21175
+"Kedah","2022","May",31732
+"Kedah","2022","Jun",43806
+"Kedah","2022","Jul",53767
+"Kedah","2022","Aug",49020
+"Kedah","2022","Sep",53683
+"Kedah","2022","Oct",76663
+"Kedah","2022","Nov",74447
+"Kedah","2022","Dec",76986
+"Kedah","2023","Jan",85205
+"Kedah","2023","Feb",82845
+"Kedah","2023","Mar",100610
+"Kedah","2023","Apr",85735
+"Kedah","2023","May",90999
+"Kedah","2023","Jun",77062
+"Kedah","2023","Jul",85594
+"Kedah","2023","Aug",76752
+"Kedah","2023","Sep",85825
+"Kedah","2023","Oct",98787
+"Kedah","2023","Nov",90706
+"Kedah","2023","Dec",106836
+"Kelantan","2020","Jan",40002
+"Kelantan","2020","Feb",39680
+"Kelantan","2020","Mar",20605
+"Kelantan","2020","Apr",22
+"Kelantan","2020","May",18
+"Kelantan","2020","Jun",21
+"Kelantan","2020","Jul",9
+"Kelantan","2020","Aug",3
+"Kelantan","2020","Sep",7
+"Kelantan","2020","Oct",1
+"Kelantan","2020","Nov",5
+"Kelantan","2020","Dec",2
+"Kelantan","2021","Feb",3
+"Kelantan","2021","Mar",4
+"Kelantan","2021","Apr",5
+"Kelantan","2021","May",1
+"Kelantan","2021","Jun",1
+"Kelantan","2021","Jul",3
+"Kelantan","2021","Sep",6
+"Kelantan","2021","Nov",4
+"Kelantan","2022","Jan",4
+"Kelantan","2022","Feb",15
+"Kelantan","2022","Mar",14
+"Kelantan","2022","Apr",8
+"Kelantan","2022","May",3846
+"Kelantan","2022","Jun",8887
+"Kelantan","2022","Jul",16008
+"Kelantan","2022","Aug",29539
+"Kelantan","2022","Sep",30029
+"Kelantan","2022","Oct",38130
+"Kelantan","2022","Nov",33210
+"Kelantan","2022","Dec",26457
+"Kelantan","2023","Jan",49954
+"Kelantan","2023","Feb",51162
+"Kelantan","2023","Mar",58591
+"Kelantan","2023","Apr",46894
+"Kelantan","2023","May",52301
+"Kelantan","2023","Jun",36762
+"Kelantan","2023","Jul",50016
+"Kelantan","2023","Aug",35798
+"Kelantan","2023","Sep",35224
+"Kelantan","2023","Oct",47679
+"Kelantan","2023","Nov",40481
+"Kelantan","2023","Dec",42337
+"Melaka","2020","Jan",6014
+"Melaka","2020","Feb",3236
+"Melaka","2020","Mar",1040
+"Melaka","2020","Oct",2
+"Melaka","2020","Dec",10
+"Melaka","2021","Mar",2
+"Melaka","2021","Jul",2
+"Melaka","2021","Nov",3
+"Melaka","2022","Mar",13
+"Melaka","2022","Apr",16
+"Melaka","2022","May",2979
+"Melaka","2022","Jun",5730
+"Melaka","2022","Jul",6265
+"Melaka","2022","Aug",6512
+"Melaka","2022","Sep",7883
+"Melaka","2022","Oct",6778
+"Melaka","2022","Nov",5202
+"Melaka","2022","Dec",8007
+"Melaka","2023","Jan",5387
+"Melaka","2023","Feb",5254
+"Melaka","2023","Mar",4596
+"Melaka","2023","Apr",5639
+"Melaka","2023","May",5255
+"Melaka","2023","Jun",5218
+"Melaka","2023","Jul",5261
+"Melaka","2023","Aug",3466
+"Melaka","2023","Sep",4227
+"Melaka","2023","Oct",3539
+"Melaka","2023","Nov",3716
+"Melaka","2023","Dec",5419
+"Negeri Sembilan","2020","Jan",3398
+"Negeri Sembilan","2020","Feb",3259
+"Negeri Sembilan","2020","Mar",1694
+"Negeri Sembilan","2020","Apr",1
+"Negeri Sembilan","2022","Apr",6
+"Negeri Sembilan","2022","May",2778
+"Negeri Sembilan","2022","Jun",5760
+"Negeri Sembilan","2022","Jul",6090
+"Negeri Sembilan","2022","Aug",7508
+"Negeri Sembilan","2022","Sep",6848
+"Negeri Sembilan","2022","Oct",7422
+"Negeri Sembilan","2022","Nov",6805
+"Negeri Sembilan","2022","Dec",7009
+"Negeri Sembilan","2023","Jan",8081
+"Negeri Sembilan","2023","Feb",9828
+"Negeri Sembilan","2023","Mar",8450
+"Negeri Sembilan","2023","Apr",4340
+"Negeri Sembilan","2023","May",14303
+"Negeri Sembilan","2023","Jun",5034
+"Negeri Sembilan","2023","Jul",6499
+"Negeri Sembilan","2023","Aug",7275
+"Negeri Sembilan","2023","Sep",6045
+"Negeri Sembilan","2023","Oct",5098
+"Negeri Sembilan","2023","Nov",5535
+"Negeri Sembilan","2023","Dec",5127
+"Pahang","2020","Jan",1068
+"Pahang","2020","Feb",449
+"Pahang","2020","Mar",271
+"Pahang","2020","May",2
+"Pahang","2020","Sep",1
+"Pahang","2020","Dec",1
+"Pahang","2021","Mar",1
+"Pahang","2021","Apr",3
+"Pahang","2021","May",3
+"Pahang","2022","Apr",41
+"Pahang","2022","May",92
+"Pahang","2022","Jun",53
+"Pahang","2022","Jul",85
+"Pahang","2022","Aug",190
+"Pahang","2022","Sep",230
+"Pahang","2022","Oct",132
+"Pahang","2022","Nov",59
+"Pahang","2022","Dec",721
+"Pahang","2023","Jan",502
+"Pahang","2023","Feb",219
+"Pahang","2023","Mar",261
+"Pahang","2023","Apr",838
+"Pahang","2023","May",804
+"Pahang","2023","Jun",998
+"Pahang","2023","Jul",716
+"Pahang","2023","Aug",752
+"Pahang","2023","Sep",1103
+"Pahang","2023","Oct",971
+"Pahang","2023","Nov",761
+"Pahang","2023","Dec",1284
+"Perak","2020","Jan",21160
+"Perak","2020","Feb",15687
+"Perak","2020","Mar",9614
+"Perak","2020","Apr",2
+"Perak","2020","Jun",5
+"Perak","2020","Jul",10
+"Perak","2020","Aug",4
+"Perak","2020","Sep",3
+"Perak","2020","Oct",5
+"Perak","2020","Nov",15
+"Perak","2020","Dec",6
+"Perak","2021","Jan",9
+"Perak","2021","Feb",6
+"Perak","2021","Mar",4
+"Perak","2021","Apr",10
+"Perak","2021","May",9
+"Perak","2021","Jun",1
+"Perak","2021","Jul",1
+"Perak","2021","Aug",2
+"Perak","2021","Sep",2
+"Perak","2021","Oct",7
+"Perak","2021","Nov",5
+"Perak","2021","Dec",12
+"Perak","2022","Jan",13
+"Perak","2022","Feb",13
+"Perak","2022","Mar",8
+"Perak","2022","Apr",1241
+"Perak","2022","May",2943
+"Perak","2022","Jun",7695
+"Perak","2022","Jul",10885
+"Perak","2022","Aug",12302
+"Perak","2022","Sep",9784
+"Perak","2022","Oct",14229
+"Perak","2022","Nov",15483
+"Perak","2022","Dec",18262
+"Perak","2023","Jan",15176
+"Perak","2023","Feb",15979
+"Perak","2023","Mar",21197
+"Perak","2023","Apr",19130
+"Perak","2023","May",20148
+"Perak","2023","Jun",18569
+"Perak","2023","Jul",21445
+"Perak","2023","Aug",19297
+"Perak","2023","Sep",17550
+"Perak","2023","Oct",18817
+"Perak","2023","Nov",19227
+"Perak","2023","Dec",22667
+"Perlis","2020","Jan",52555
+"Perlis","2020","Feb",45829
+"Perlis","2020","Mar",29629
+"Perlis","2020","Apr",2
+"Perlis","2020","May",24
+"Perlis","2020","Jun",3
+"Perlis","2020","Jul",2564
+"Perlis","2020","Aug",4320
+"Perlis","2020","Sep",5202
+"Perlis","2020","Oct",5489
+"Perlis","2020","Nov",6796
+"Perlis","2020","Dec",8797
+"Perlis","2021","Jan",9933
+"Perlis","2021","Feb",9335
+"Perlis","2021","Mar",10974
+"Perlis","2021","Apr",8160
+"Perlis","2021","May",8617
+"Perlis","2021","Jun",7248
+"Perlis","2021","Jul",6961
+"Perlis","2021","Aug",7382
+"Perlis","2021","Sep",7743
+"Perlis","2021","Oct",7956
+"Perlis","2021","Nov",7404
+"Perlis","2021","Dec",9208
+"Perlis","2022","Jan",9168
+"Perlis","2022","Feb",8533
+"Perlis","2022","Mar",10164
+"Perlis","2022","Apr",10089
+"Perlis","2022","May",25309
+"Perlis","2022","Jun",41618
+"Perlis","2022","Jul",50673
+"Perlis","2022","Aug",65702
+"Perlis","2022","Sep",48374
+"Perlis","2022","Oct",58275
+"Perlis","2022","Nov",55297
+"Perlis","2022","Dec",54031
+"Perlis","2023","Jan",59069
+"Perlis","2023","Feb",56893
+"Perlis","2023","Mar",69604
+"Perlis","2023","Apr",54352
+"Perlis","2023","May",62961
+"Perlis","2023","Jun",46488
+"Perlis","2023","Jul",65446
+"Perlis","2023","Aug",48127
+"Perlis","2023","Sep",53627
+"Perlis","2023","Oct",60060
+"Perlis","2023","Nov",55720
+"Perlis","2023","Dec",53904
+"Pulau Pinang","2020","Jan",66036
+"Pulau Pinang","2020","Feb",46118
+"Pulau Pinang","2020","Mar",23059
+"Pulau Pinang","2020","Apr",11
+"Pulau Pinang","2020","May",1
+"Pulau Pinang","2020","Jun",18
+"Pulau Pinang","2020","Jul",24
+"Pulau Pinang","2020","Aug",36
+"Pulau Pinang","2020","Sep",26
+"Pulau Pinang","2020","Oct",66
+"Pulau Pinang","2020","Nov",98
+"Pulau Pinang","2020","Dec",96
+"Pulau Pinang","2021","Jan",89
+"Pulau Pinang","2021","Feb",101
+"Pulau Pinang","2021","Mar",156
+"Pulau Pinang","2021","Apr",108
+"Pulau Pinang","2021","May",134
+"Pulau Pinang","2021","Jun",347
+"Pulau Pinang","2021","Jul",162
+"Pulau Pinang","2021","Aug",257
+"Pulau Pinang","2021","Sep",266
+"Pulau Pinang","2021","Oct",281
+"Pulau Pinang","2021","Nov",366
+"Pulau Pinang","2021","Dec",366
+"Pulau Pinang","2022","Jan",266
+"Pulau Pinang","2022","Feb",471
+"Pulau Pinang","2022","Mar",1618
+"Pulau Pinang","2022","Apr",10474
+"Pulau Pinang","2022","May",24016
+"Pulau Pinang","2022","Jun",38574
+"Pulau Pinang","2022","Jul",43778
+"Pulau Pinang","2022","Aug",45760
+"Pulau Pinang","2022","Sep",49708
+"Pulau Pinang","2022","Oct",54998
+"Pulau Pinang","2022","Nov",54950
+"Pulau Pinang","2022","Dec",65774
+"Pulau Pinang","2023","Jan",68413
+"Pulau Pinang","2023","Feb",64992
+"Pulau Pinang","2023","Mar",74338
+"Pulau Pinang","2023","Apr",76199
+"Pulau Pinang","2023","May",82196
+"Pulau Pinang","2023","Jun",102563
+"Pulau Pinang","2023","Jul",96685
+"Pulau Pinang","2023","Aug",91870
+"Pulau Pinang","2023","Sep",87273
+"Pulau Pinang","2023","Oct",86237
+"Pulau Pinang","2023","Nov",94094
+"Pulau Pinang","2023","Dec",107553
+"Sabah","2020","Jan",64786
+"Sabah","2020","Feb",30134
+"Sabah","2020","Mar",7275
+"Sabah","2020","Apr",18
+"Sabah","2020","May",19
+"Sabah","2020","Jun",33
+"Sabah","2020","Jul",95
+"Sabah","2020","Aug",37
+"Sabah","2020","Sep",21
+"Sabah","2020","Oct",2
+"Sabah","2020","Nov",5
+"Sabah","2020","Dec",11
+"Sabah","2021","Jan",10
+"Sabah","2021","Feb",18
+"Sabah","2021","Mar",18
+"Sabah","2021","Apr",7
+"Sabah","2021","May",12
+"Sabah","2021","Jun",4
+"Sabah","2021","Jul",5
+"Sabah","2021","Aug",7
+"Sabah","2021","Sep",2
+"Sabah","2021","Oct",10
+"Sabah","2021","Nov",35
+"Sabah","2021","Dec",28
+"Sabah","2022","Jan",40
+"Sabah","2022","Feb",18
+"Sabah","2022","Mar",30
+"Sabah","2022","Apr",1732
+"Sabah","2022","May",5171
+"Sabah","2022","Jun",10585
+"Sabah","2022","Jul",19690
+"Sabah","2022","Aug",19218
+"Sabah","2022","Sep",17255
+"Sabah","2022","Oct",17474
+"Sabah","2022","Nov",21316
+"Sabah","2022","Dec",29577
+"Sabah","2023","Jan",37869
+"Sabah","2023","Feb",33893
+"Sabah","2023","Mar",37374
+"Sabah","2023","Apr",36662
+"Sabah","2023","May",41941
+"Sabah","2023","Jun",25484
+"Sabah","2023","Jul",31311
+"Sabah","2023","Aug",9819
+"Sabah","2023","Sep",9075
+"Sabah","2023","Oct",7931
+"Sabah","2023","Nov",30554
+"Sabah","2023","Dec",52232
+"Sarawak","2020","Jan",140067
+"Sarawak","2020","Feb",100441
+"Sarawak","2020","Mar",49471
+"Sarawak","2020","Apr",470
+"Sarawak","2020","May",454
+"Sarawak","2020","Jun",946
+"Sarawak","2020","Jul",1193
+"Sarawak","2020","Aug",808
+"Sarawak","2020","Sep",848
+"Sarawak","2020","Oct",642
+"Sarawak","2020","Nov",1025
+"Sarawak","2020","Dec",853
+"Sarawak","2021","Jan",946
+"Sarawak","2021","Feb",756
+"Sarawak","2021","Mar",1087
+"Sarawak","2021","Apr",981
+"Sarawak","2021","May",899
+"Sarawak","2021","Jun",811
+"Sarawak","2021","Jul",976
+"Sarawak","2021","Aug",701
+"Sarawak","2021","Sep",674
+"Sarawak","2021","Oct",570
+"Sarawak","2021","Nov",811
+"Sarawak","2021","Dec",694
+"Sarawak","2022","Jan",1008
+"Sarawak","2022","Feb",778
+"Sarawak","2022","Mar",950
+"Sarawak","2022","Apr",3082
+"Sarawak","2022","May",16043
+"Sarawak","2022","Jun",29009
+"Sarawak","2022","Jul",35174
+"Sarawak","2022","Aug",63635
+"Sarawak","2022","Sep",90323
+"Sarawak","2022","Oct",95939
+"Sarawak","2022","Nov",98415
+"Sarawak","2022","Dec",193673
+"Sarawak","2023","Jan",140647
+"Sarawak","2023","Feb",132289
+"Sarawak","2023","Mar",141146
+"Sarawak","2023","Apr",173038
+"Sarawak","2023","May",147499
+"Sarawak","2023","Jun",120361
+"Sarawak","2023","Jul",128517
+"Sarawak","2023","Aug",112474
+"Sarawak","2023","Sep",113143
+"Sarawak","2023","Oct",106640
+"Sarawak","2023","Nov",113026
+"Sarawak","2023","Dec",230361
+"Selangor","2020","Jan",816271
+"Selangor","2020","Feb",551200
+"Selangor","2020","Mar",214004
+"Selangor","2020","Apr",416
+"Selangor","2020","May",613
+"Selangor","2020","Jun",1234
+"Selangor","2020","Jul",5592
+"Selangor","2020","Aug",5825
+"Selangor","2020","Sep",5906
+"Selangor","2020","Oct",5763
+"Selangor","2020","Nov",5398
+"Selangor","2020","Dec",4926
+"Selangor","2021","Jan",6161
+"Selangor","2021","Feb",6110
+"Selangor","2021","Mar",10013
+"Selangor","2021","Apr",9893
+"Selangor","2021","May",6859
+"Selangor","2021","Jun",4164
+"Selangor","2021","Jul",5519
+"Selangor","2021","Aug",6759
+"Selangor","2021","Sep",7258
+"Selangor","2021","Oct",10027
+"Selangor","2021","Nov",14736
+"Selangor","2021","Dec",45351
+"Selangor","2022","Jan",42559
+"Selangor","2022","Feb",38724
+"Selangor","2022","Mar",50971
+"Selangor","2022","Apr",120989
+"Selangor","2022","May",212153
+"Selangor","2022","Jun",253915
+"Selangor","2022","Jul",331160
+"Selangor","2022","Aug",385701
+"Selangor","2022","Sep",382323
+"Selangor","2022","Oct",442883
+"Selangor","2022","Nov",466976
+"Selangor","2022","Dec",521697
+"Selangor","2023","Jan",528491
+"Selangor","2023","Feb",495505
+"Selangor","2023","Mar",568402
+"Selangor","2023","Apr",549391
+"Selangor","2023","May",597085
+"Selangor","2023","Jun",448692
+"Selangor","2023","Jul",790509
+"Selangor","2023","Aug",782423
+"Selangor","2023","Sep",703861
+"Selangor","2023","Oct",643039
+"Selangor","2023","Nov",648684
+"Selangor","2023","Dec",792764
+"Terengganu","2020","Feb",2
+"Terengganu","2020","Mar",26
+"Terengganu","2020","Jun",1
+"Terengganu","2020","Dec",20
+"Terengganu","2021","Jan",13
+"Terengganu","2021","Feb",11
+"Terengganu","2021","Mar",18
+"Terengganu","2021","May",4
+"Terengganu","2021","Sep",1
+"Terengganu","2022","Apr",2
+"Terengganu","2022","Jun",7
+"Terengganu","2022","Sep",16
+"Terengganu","2022","Oct",4
+"Terengganu","2022","Nov",4
+"Terengganu","2023","Feb",3
+"Terengganu","2023","Mar",18
+"Terengganu","2023","Apr",1
+"Terengganu","2023","May",1
+"Terengganu","2023","Jun",3
+"Terengganu","2023","Jul",1
+"Terengganu","2023","Sep",3
+"Terengganu","2023","Oct",4
+"Terengganu","2023","Nov",17
+"Terengganu","2023","Dec",1
+"W.P. Labuan","2020","Jan",3947
+"W.P. Labuan","2020","Feb",2442
+"W.P. Labuan","2020","Mar",912
+"W.P. Labuan","2020","Apr",2
+"W.P. Labuan","2020","May",2
+"W.P. Labuan","2020","Jun",5
+"W.P. Labuan","2020","Jul",11
+"W.P. Labuan","2020","Aug",6
+"W.P. Labuan","2020","Sep",10
+"W.P. Labuan","2020","Oct",5
+"W.P. Labuan","2020","Nov",13
+"W.P. Labuan","2020","Dec",8
+"W.P. Labuan","2021","Jan",6
+"W.P. Labuan","2021","Feb",9
+"W.P. Labuan","2021","Mar",6
+"W.P. Labuan","2021","Apr",10
+"W.P. Labuan","2021","May",15
+"W.P. Labuan","2021","Jul",15
+"W.P. Labuan","2021","Aug",9
+"W.P. Labuan","2021","Sep",7
+"W.P. Labuan","2021","Nov",3
+"W.P. Labuan","2021","Dec",10
+"W.P. Labuan","2022","Jan",12
+"W.P. Labuan","2022","Feb",17
+"W.P. Labuan","2022","Mar",12
+"W.P. Labuan","2022","Apr",31
+"W.P. Labuan","2022","May",28
+"W.P. Labuan","2022","Jun",42
+"W.P. Labuan","2022","Jul",64
+"W.P. Labuan","2022","Aug",652
+"W.P. Labuan","2022","Sep",939
+"W.P. Labuan","2022","Oct",1026
+"W.P. Labuan","2022","Nov",1233
+"W.P. Labuan","2022","Dec",2315
+"W.P. Labuan","2023","Jan",1622
+"W.P. Labuan","2023","Feb",1946
+"W.P. Labuan","2023","Mar",1423
+"W.P. Labuan","2023","Apr",2291
+"W.P. Labuan","2023","May",1739
+"W.P. Labuan","2023","Jun",1587
+"W.P. Labuan","2023","Jul",1360
+"W.P. Labuan","2023","Aug",2287
+"W.P. Labuan","2023","Sep",1469
+"W.P. Labuan","2023","Oct",1327
+"W.P. Labuan","2023","Nov",1651
+"W.P. Labuan","2023","Dec",3817
