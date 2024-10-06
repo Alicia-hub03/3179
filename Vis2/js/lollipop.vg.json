@@ -1,6 +1,128 @@
 {
-"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/cleanedSOE.csv" },
   "width": 800,
   "height": 450,
-  "title": "Tourist Nationality by State"
+  "title": "Tourist Nationality by State",
+  "params": [
+        {
+            "name": "Region_selection",
+            "value": "South America",
+            "bind": {
+            "input": "select",
+            "options": [
+                "South America",
+                "North America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania",
+                "Antarctica"
+            ],
+            "labels": [
+                "South America",
+                "North America",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania",
+                "Antarctica"
+            ],
+            "name": "Region Selection: "
+            }
+        },
+        {
+            "name": "State_selection",
+            "value": "Johor",
+            "bind": {
+            "input": "select",
+            "options": [
+                "Johor",
+                "Kedah",
+                "Kelantan",
+                "Melaka",
+                "Negeri Sembilan",
+                "Pahang",
+                "Perak",
+                "Perlis",
+                "Pulau Pinang",
+                "Sabah",
+                "Sarawak",
+                "Selangor",
+                "Terengganu",
+                "W.P. Labuan"
+            ],
+            "labels": [
+                "Johor",
+                "Kedah",
+                "Kelantan",
+                "Melaka",
+                "Negeri Sembilan",
+                "Pahang",
+                "Perak",
+                "Perlis",
+                "Pulau Pinang",
+                "Sabah",
+                "Sarawak",
+                "Selangor",
+                "Terengganu",
+                "W.P. Labuan"
+            ],
+            "name": "State Selection: "
+            }
+        }
+    ],
+    "transform": [
+        {"filter": "datum.continent == Region_selection"},
+        {"filter": "datum.state == State_selection"}
+    ],
+  "layer": [
+    {
+        "mark": {"type": "bar", "width":6},
+        "encoding": {
+          "x": {
+            "field": "country",
+            "type": "nominal"
+          },
+          "y": {
+            "aggregate": "sum",
+            "field": "arrivals",
+            "type": "quantitative",
+            "axis": {"grid": false}  
+          },
+          "color": {
+            "field":"country"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "size": 300,
+          "filled": true,
+          "opacity": 1
+        },
+        "encoding": {
+          "color": {
+            "field":"country"          
+        }
+          ,
+          "x": {
+            "field": "country",
+            "type": "nominal"
+          },
+          "y": {
+            "aggregate": "sum",
+            "field": "arrivals",
+            "type": "quantitative"
+        },
+        "tooltip":[
+            {"field": "country", "type": "nominal"},
+            {"aggregate": "sum", "field": "arrivals", "type": "quantitative"}
+        ]
+        }
+      }
+  ],
+  "config": {"view": {"stroke": null}, 
+  "background": "#F6F6F6"}
 }

@@ -29,6 +29,7 @@
         },
         "y": {
             "field": "month",
+            "timeUnit": "month",
             "type": "ordinal",
             "title": "Month"
         },
@@ -42,9 +43,10 @@
             {
                 "field": "total_arrivals",
                 "type": "quantitative",
-                "title": "Number of Tourist"
+                "title": "Number of Tourist",
+                "format": ","
             },
-            {"field": "month","type": "ordinal", "title": "Month"}
+            {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"}
         ]
     },
     "config": {
