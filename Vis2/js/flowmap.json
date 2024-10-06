@@ -1,0 +1,227 @@
+[{
+    "points": [35.861660, 104.195396, 4.210484, 101.975766],
+    "total": 1.67,
+    "from": "China",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -10
+    }
+ },
+ {
+    "points": [1.352083, 103.819836, 4.210484, 101.975766],
+    "total": 4469.91,
+    "from": "Singapore",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": 1,
+        "offsetY": 5
+    }
+ },
+ {
+    "points": [4.535277, 114.727669, 4.210484, 101.975766],
+    "total": 3681.41,
+    "from": "Brunei",
+    "curvature": 0.6,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -60,
+        "offsetY": -25
+    }
+ },
+ {
+    "points": [15.870032, 100.992541, 4.210484, 101.975766],
+    "total": 61.85,
+    "from": "Thailand",
+    "curvature": -0.65,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": 2,
+        "offsetY": -20
+    }
+ },
+ {
+    "points": [-25.274399, 133.775131, 4.210484, 101.975766],
+    "total": 25.29,
+    "from": "Australia",
+    "curvature": -0.9,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -25
+    }
+ },
+ {
+    "points": [-0.789275 , 113.921327, 4.210484, 101.975766],
+    "total": 22.18,
+    "from": "Indonesia",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -25
+    }
+ },
+ {
+    "points": [23.697810, 120.960515, 4.210484, 101.975766],
+    "total": 19.00,
+    "from": "Taiwan",
+    "curvature": 0.575,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -10
+    }
+ },
+ {
+    "points": [51.165691, 10.451526, 4.210484, 101.975766],
+    "total": 2.91,
+    "from": "Germany",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -15
+    }
+ },
+ {
+    "points": [35.907757, 127.766922
+        , 4.210484, 101.975766],
+    "total": 15.05,
+    "from": "South Korea",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -10
+    }
+ },
+ {
+    "points": [28.394857, 84.124008, 4.210484, 101.975766],
+    "total": 12.82,
+    "from": "Nepal",
+    "curvature": 0.575,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -25
+    }
+ },
+ {
+    "points": [55.378051, -3.435973, 4.210484, 101.975766],
+    "total": 8.24,
+    "from": "United Kingdom",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom"
+    }
+ },
+ {
+    "points": [12.879721, 121.774017, 4.210484, 101.975766],
+    "total": 7.34,
+    "from": "Philippines",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -10,
+        "offsetY": -30
+    }
+ },
+ {
+    "points": [14.058324, 108.277199, 4.210484, 101.975766],
+    "total": 6.69,
+    "from": "Vietnam",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -25
+    }
+ },
+ {
+    "points": [23.684994, 90.356331, 4.210484, 101.975766],
+    "total": 5.42,
+    "from": "Bangladesh",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -75
+    }
+ },
+ {
+    "points": [21.913965, 95.956223, 4.210484, 101.975766],
+    "total": 4.96,
+    "from": "Myanmar",
+    "curvature": 0.35,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -25
+    }
+ },
+ {
+    "points": [36.204824, 138.252924, 4.210484, 101.975766],
+    "total": 4.50,
+    "from": "Japan",
+    "curvature": 0.2,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom"
+    }
+ },
+ {
+    "points": [46.227638, 2.213749, 4.210484, 101.975766],
+    "total": 3.72,
+    "from": "France",
+    "curvature": 0.45,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -25,
+        "offsetY": 10
+    }
+ },
+ {
+    "points": [37.090240, -95.712891, 4.210484, 101.975766],
+    "total": 1.31,
+    "from": "United States",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX": -63,
+        "offsetY": -15
+    }
+ },
+ {
+    "points": [30.375321, 69.345116, 4.210484, 101.975766],
+    "total": 1.15,
+    "from": "Pakistan",
+    "curvature": -0.65,
+    "label":{
+        "position": "0%",
+        "anchor": "topLeft",
+        "offsetX": -5,
+        "offsetY": 5
+    }
+ },
+ {
+    "points": [20.593684, 78.962880, 4.210484, 101.975766],
+    "total": 1.12,
+    "from": "India",
+    "curvature": 0.5,
+    "label":{
+        "position": "0%",
+        "anchor": "bottom",
+        "offsetX":-25
+    }
+ }
+]

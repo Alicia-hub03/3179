@@ -21,18 +21,45 @@
     </div>
     
     <div class = "chart">
-        <div id="stk_bar"></div>
+        <p>Continental Trends in Tourist Arrivals across the Malaysian State</p>
+        <div id="alluvial"></div>
     </div>
 
+    <div class = "chart">
+        <div id="heatmap"></div>
+    </div>
+
+    <div class = "chart">
+        <div id="lollipop"></div>
+    </div>
+
+    <div class = "chart">
+        <div id="line"></div>
+    </div>
     <script type="text/javascript">
-    var spec1 = "js/groupedBarChart.vg.json";
-    var spec2 = "js/malaysia_tourism.vg.json";
+    var alluvial = "js/alluvial.vg.json";
+    var symbol_map = "js/malaysia_tourism.vg.json";
+    var heatmap = "js/small_multiple_heatmap.vg.json";
+    var lollipop = "js/lollipop.vg.json";
+    var line = "js/multiline.vg.json";
     
-    vegaEmbed('#symbol_map', spec2).then(function(result) {
+    vegaEmbed('#symbol_map', symbol_map).then(function(result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#stk_bar', spec1).then(function(result) {
+    vegaEmbed('#alluvial', alluvial).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#heatmap', heatmap).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#lollipop', lollipop).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#line', line).then(function(result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     </script>

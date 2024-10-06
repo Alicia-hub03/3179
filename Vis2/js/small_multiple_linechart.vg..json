@@ -8,34 +8,28 @@
         "height": 300,
         "layer": [
             {
-                "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state_long.csv" },
-                "mark": {"type": "rect", "strokeWidth": 2},
+                "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/arrivals_wide.csv" },
+                "mark": {"type": "line", "point":true},
                 "encoding": {
                     "x": {
-                        "field": "state",
-                        "type": "nominal",
-                        "title": "State"
-                    },
-                    "y": {
                         "field": "month",
                         "timeUnit": "month",
                         "type": "ordinal",
                         "title": "Month"
                     },
-                    "fill": {
+                    "y": {
                         "field": { "repeat": "repeat" },
                         "type": "quantitative",
                         "title": "Number of Tourist"
                     },
                     "tooltip": [
-                        {"field": "state", "type": "nominal", "title": "State"},
+                        {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"},
                         {
                             "field": { "repeat": "repeat" },
                             "type": "quantitative",
                             "title": "Number of Tourist",
                             "format": ","
-                        },
-                        {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"}
+                        }
                     ]
                 }
             },
