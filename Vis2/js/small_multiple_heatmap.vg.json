@@ -1,0 +1,75 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State (2020-2023)",
+    "repeat": ["2020", "2021", "2022", "2023"],
+    "columns": 2,
+    "spec": {
+        "width": 400,
+        "height": 300,
+        "layer": [
+            {
+                "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state.csv" },
+                "mark": {"type": "rect", "strokeWidth": 2},
+                "encoding": {
+                    "x": {
+                        "field": "state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    "y": {
+                        "field": "month",
+                        "timeUnit": "month",
+                        "type": "ordinal",
+                        "title": "Month"
+                    },
+                    "fill": {
+                        "field": "total_arrivals",
+                        "type": "quantitative",
+                        "title": "Number of Tourist"
+                    },
+                    "tooltip": [
+                        {"field": "state", "type": "nominal", "title": "State"},
+                        {
+                            "field": "total_arrivals",
+                            "type": "quantitative",
+                            "title": "Number of Tourist",
+                            "format": ","
+                        },
+                        {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"}
+                    ]
+                }
+            },
+            {
+                "data": {
+                    "values": [{
+                        "2020": "Year: 2020",
+                        "2021": "Year: 2021",
+                        "2022": "Year: 2022",
+                        "2023": "Year: 2023"
+                    }]
+                },
+                "mark": {
+                    "type": "text",
+                    "align": "right",
+                    "baseline": "bottom",
+                    "x": "width",
+                    "y": 0
+                },
+                "encoding": {
+                    "text": { "field": { "repeat": "repeat" } }
+                }
+
+            }
+        ]
+    },
+    "config": {
+        "scale": {"bandPaddingInner": 0, "bandPaddingOuter": 0},
+        "view": {"step": 40},
+        "range": {"ramp": {"scheme": "yellowgreenblue"}},
+        "axis": {
+          "domain": false,
+          "grid": true,
+          "tickBand": "extent"
+        }
+      }
+}
