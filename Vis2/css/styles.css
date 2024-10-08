@@ -56,7 +56,6 @@ h4 {
     padding: 40px; /*inner spacing within card*/
     margin: 15px; /* outer spacing around card*/
     text-align: center;
-    flex: 1; /* Allow the card to grow */
 }  
 
 .card-1 {
@@ -65,7 +64,6 @@ border-radius: 10px;
 padding: 40px; /*inner spacing within card*/
 margin: 15px; /* outer spacing around card*/
 text-align: center;
-flex: 1; /* Allow the card to grow */
 }  
 
 /* card container for side-by-side card */
@@ -73,6 +71,7 @@ flex: 1; /* Allow the card to grow */
     display: flex; /* Use flexbox for side-by-side cards */
     justify-content: space-between; /* Space out the cards */
     align-items: stretch; /* stretch the cards to the same height */
+    align-items: center;
   }
 
 .chart {
@@ -94,7 +93,6 @@ flex: 1; /* Allow the card to grow */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .chart-2 {
@@ -105,7 +103,6 @@ flex: 1; /* Allow the card to grow */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 
