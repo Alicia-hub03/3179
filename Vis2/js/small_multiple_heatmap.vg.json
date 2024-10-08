@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State (2020-2023)",
     "repeat": ["2020", "2021", "2022", "2023"],
     "columns": 2,
     "spec": {

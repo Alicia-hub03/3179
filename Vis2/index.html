@@ -5,6 +5,13 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Flow map - AnyChart library -->
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-map.min.js"></script>
+  <script src="https://cdn.anychart.com/geodata/latest/custom/world/world.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-data-adapter.min.js"></script>
   
   
    <!-- CSS file -->
@@ -12,30 +19,118 @@
   
 </head>
 <body>
-    <!-- Title of the page -->
-    <h1>Malaysia Tourism Statistics</h1>
+    <div>
+        <div class="container">
+            <!-- Title of the page -->
+            <h1>Malaysia <span id="orangeTitle">Tourism Statistics</span></h1>
+            <h3>A 4-Year Analysis of Trends and Insights on Malaysia Tourism</h3>
+        </div>
+        <hr>
 
-    <div class = "container">
-        <div class = "chart">
-            <div id="symbol_map"></div>
+      <!-- Radial plot and grouped bar chart -->
+        <div class="container">
+            <h4>Malaysia as a Tourist Destination</h4>
+
+        </div>
+        <hr>
+        <div class ="card-container-2">
+            <div class="card-1">
+                <div class="chart">
+                    <p><strong style = "font-weight: 900; font-size: 30px"><center> Monthly Trends in Tourist Arrivals <br> (2020 - 2023)</center></strong></p>
+                    <!-- <p>&nbsp</p> -->
+                    <p>A clear sharp decline in the early months for year 2020 can be seen with the outbreak of Covid-19.</p>
+                    <p>The year 2021 remain below 100,000 arrivals with global and nationwide lockdown and restrictions implemented during the global pandemic.</p>
+                    <p>However, as the years gone by, with the removal of travel restrictions, Malaysia tourism gradually pick back up to speed in millions of tourist arrival.</p>
+                    <p>&nbsp</p>
+                    <p>&nbsp</p>
+                    <p>&nbsp</p>
+                </div>
+                
+            <!-- <div class = "pure-g">
+                        <div class = "pure-u-18-24">
+                            <div id = "flowmap"></div>
+                        </div>
+                    </div> -->
+            </div>
+            <div class="card-2">
+                <div class="chart">
+                    <div id="line"></div>
+                </div>
+            </div>
+        </div>
+         <hr>
+        <div class="container">
+            <h4>Malaysia State Popularity amongst Tourist Nationality</h4>
+        </div>
+        <hr>
+        <!-- Alluvial chart -->
+        <div class ="card-container-2">
+
+            <div class="card-2">
+                <div class="chart-1">
+                    <p><strong style = "font-weight: 900; font-size: 30px"><center>Continental Trends in Tourist Arrivals across the Malaysian State</center></strong></p>
+                    <div id="alluvial" class="alluvial-container"></div>
+                </div>
+                <div class="chart-2">
+                    <p>Some descriptive text</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- lollipop chart -->
+        <div class ="card-container-2">
+            <div class="card-2" >
+                <div class="chart-1">
+                    <p><strong style = "font-weight: 900; font-size: 30px"><center>Tourist Nationality by State</center></strong></p>
+                    <div id="lollipop"></div>
+                </div>
+                <div class="chart-2">
+                    <p>Some descriptive text</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h4>Peak Travel Seasons and Hotspots</h4>
+        </div>
+        <hr>
+        <div class ="card-container-2">
+            <div class="card-2" >
+                <div class="chart-1">
+                    <p><strong style = "font-weight: 900; font-size: 30px"><center>Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State (2020-2023)</center></strong></p>
+                    <div id="heatmap"></div>
+                </div>
+                <div class="chart-2">
+                    <p>Some descriptive text</p>
+                </div>
+            </div>
+        </div>
+        <div class ="card-container-2">
+            <div class="card-2" >
+                <div class="chart-1">
+                    <p><strong style = "font-weight: 900; font-size: 30px"><center>Malaysia’s Most Visited States by Foreign Tourists: A 2020-2023 Overview</center></strong></p>
+                    <div id="symbol_map"></div>
+                </div>
+
+                <div class="chart-2">
+                    <p>Some descriptive text</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <hr>
+        <p id="footer"><strong>Created and Designed By:</strong> Alicia Quek Chik Wen</p>
+        <p id="footer"><strong>Updated on:</strong> October 2024</p>
+        <p id="footer"><strong>Data Sourced From:</strong> Malaysia's official open data portal</p>
+        <p id="footer"><strong>Data Sourced Link:</strong> https://data.gov.my/data-catalogue/arrivals_soe</p>
+        <p id="footer"><strong>Data Author:</strong> Immigration Department of Malaysia</p>
+
     </div>
     
-    <div class = "chart">
-        <p>Continental Trends in Tourist Arrivals across the Malaysian State</p>
-        <div id="alluvial"></div>
-    </div>
 
-    <div class = "chart">
-        <div id="heatmap"></div>
-    </div>
+    
 
-    <div class = "chart">
-        <div id="lollipop"></div>
-    </div>
-
-    <div class = "chart">
-        <div id="line"></div>
-    </div>
     <script type="text/javascript">
     var alluvial = "js/alluvial.vg.json";
     var symbol_map = "js/malaysia_tourism.vg.json";
@@ -62,6 +157,176 @@
     vegaEmbed('#line', line).then(function(result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+
+//     // Flow Map 
+//         anychart.onDocumentReady(function () {
+//         anychart.data.loadJsonFile('js/flowmap.json', function (data) {
+
+//         // сreate a connector map chart instance
+//         var map = anychart.connector();
+
+//         // include the world map geodata
+//         map.geoData('anychart.maps.world');
+
+//         // darken all regions
+//         map
+//           .unboundRegions()
+//           .enabled(true)
+//           .fill('#E1E1E1')
+//           .stroke('#B5B2B2');
+
+//         // display all labels even if there is an overlap
+//         map.overlapMode("allow-overlap");
+
+//         // a helper function to create the series
+//         // that will form the connector lines
+//         var createSeries = function (name, data, color) {
+
+//           // create and customize the connector series
+//           var connectorSeries = map
+//             .connector(data)
+//             .name(name)
+//             .fill(color)
+//             .stroke({
+//               color: color,
+//               thickness: 2
+//             });
+            
+//           // change the coloring of the connector line in the hovered state
+//           connectorSeries
+//             .hovered()
+//             .stroke('1.5 #212121')
+//             .fill('#212121');
+          
+//           // configure the arrow marker
+//           connectorSeries
+//             .markers()
+//             .position('100%')
+//             .fill(color)
+//             .stroke({
+//               color: color
+//             })
+//             .size(17);
+          
+//           // configure the arrow marker in the hovered state
+//           connectorSeries
+//             .hovered()
+//             .markers()
+//             .position('100%')
+//             .size(17)
+//             .fill('#212121')
+//             .stroke('2 #455a64');
+          
+//           // set the labels for the source countries
+//           connectorSeries
+//             .labels()
+//             .enabled(true)
+//             .format(function () {
+//               return this.getData('from');
+//             })
+//             .fontColor('#212121');
+
+//           // set the thickness of the connector line based on the series
+//           if (name === 'More than 25%') {
+//             connectorSeries.startSize(14).endSize(0);
+//           } else if (name === '15% to 25%') {
+//             connectorSeries.startSize(7.5).endSize(1.5);
+//           } else if (name === '5% to 15%') {
+//             connectorSeries.startSize(4.5).endSize(2);
+//           } else if (name === '1% to 5%') {
+//             connectorSeries.startSize(2.5).endSize(2);
+//           } else {
+//             connectorSeries.startSize(0.5).endSize(0.5);
+//           }
+        
+//           // configure the settings for the legend items
+//         connectorSeries
+//           .legendItem()
+//           .iconType('square')
+//           .iconFill(color)
+//           .iconStroke(false);
+        
+//         // sets tooltip setting for the series
+//         connectorSeries
+//         .tooltip()
+//         .useHtml(true)
+//         .format(function () {
+//           return (
+//             '<h4 style="font-size:14px; font-weight:400; margin: 0.25rem 0;">From: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b> ' + this.getData('from') +  '</b></h4>' +
+//             '<h4 style="font-size:14px; font-weight:400; margin: 0.25rem 0;">Visitor Percentage (%): <b> ' +        this.getData('total').toLocaleString() + '</b></h4>'
+//           );
+//         });
+        
+//         };
+
+//         // Helper function to bind the data field to the local var.
+//         function filterFunction(val1, val2) {
+//           if (val2) {
+//             return function (fieldVal) {
+//               return val1 <= fieldVal && fieldVal < val2;
+//             };
+//           }
+//           return function (fieldVal) {
+//             return val1 <= fieldVal;
+//           };
+//         }
+
+//         // create a dataset from the data
+//         var dataSet = anychart.data.set(data).mapAs();
+
+//         // create five series filtering the data
+//         // by the absolute values of the migration numbers
+//         createSeries(
+//           'Less than 1%',
+//           dataSet.filter('total', filterFunction(0, 1)),
+//           '#FFB36F'
+//         );
+//         createSeries(
+//           '1% to 5%',
+//           dataSet.filter('total', filterFunction(1, 5)),
+//           '#FF7903'
+//         );
+//         createSeries(
+//           '5% to 15%',
+//           dataSet.filter('total', filterFunction(5, 15)),
+//           '#3fb8c5'
+//         );
+//         createSeries(
+//           '15% to 25%',
+//           dataSet.filter('total', filterFunction(15, 25)),
+//           '#1792c0'
+//         );
+//         createSeries(
+//           'More than 25%',
+//           dataSet.filter('total', filterFunction(25, 100)),
+//           '#1c5eaa'
+//         );
+        
+//         // Turns on the legend for the sample
+//         map
+//           .legend()
+//           .enabled(true)
+//           .position('top')
+//           .padding([20, 0, 20, 0])
+//           .fontSize(12)
+//           .fontColor('#212121');
+
+//         map
+//           .legend()
+//           .title()
+//           .enabled(true)
+//           .fontSize(14.5)
+//           .padding([0, 0, 5, 0])
+//           .text('Percentage of visitors (in the year of 2022)')
+//           .fontColor('#212121');
+
+//         // set the container
+//         map.container('flowmap');
+
+//         // draw the map
+//         map.draw();
+//   });
+// });
     </script>
 
 </body>

@@ -1,14 +1,45 @@
 body *{
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
+    -font-smooth: always;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 35px;
-    margin-bottom: 20px;
+    font-family: 'Inclusive';
+    font-weight: 1000;
+    font-size: 80px;
     text-align: center;
 }
+
+/* colour */
+#orangeTitle{
+    color: #f86b0d;
+    font-family: 'Inclusive';
+    font-weight: 1000;
+    font-size: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Inclusive';
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Inclusive';
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+.pure-g img {
+    height: 20vw;
+}
+
 
 .container {
     display: flex;
@@ -17,14 +48,207 @@ h1 {
     padding: 10px;
 }
 
+/* Card Styles for side-by-side cards */
+
+.card-2 {
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 10px;
+    padding: 40px; /*inner spacing within card*/
+    margin: 15px; /* outer spacing around card*/
+    text-align: center;
+    flex: 1; /* Allow the card to grow */
+}  
+
+.card-1 {
+background-color: rgba(255, 255, 255, 0.897);
+border-radius: 10px;
+padding: 40px; /*inner spacing within card*/
+margin: 15px; /* outer spacing around card*/
+text-align: center;
+flex: 1; /* Allow the card to grow */
+}  
+
+/* card container for side-by-side card */
+.card-container-2 {
+    display: flex; /* Use flexbox for side-by-side cards */
+    justify-content: space-between; /* Space out the cards */
+    align-items: stretch; /* stretch the cards to the same height */
+  }
+
 .chart {
     margin-bottom: 40px;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1500px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-1 {
+    margin-bottom: 40px;
+    width: 1900px;
+    max-width: 2000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart-2 {
+    margin-bottom: 5px;
+    width: 1900px;
+    max-width: 2000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* header */
+#headerImage {
+    width: 1500px;
+    height: 400px;
+    
+}
+
+.headerContainer {
+    position: relative;
+    text-align: center
+}
+
+
+.headerText{
+    position: absolute;
+
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#center {
+    text-align: center;
+}
+
+
+.page {
+    width:1500px;
+    background-color: #F6F6F6;
+    margin: auto;
+}
+
+/* charts */
+
+.vis-container {
+    width: 100%;
+    align-items: center;
+    align-content: center;
+
+}
+
+.lollipop-container {
+    width: 100%;
+    padding-left: 290px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.alluvial-container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.treemap-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lollipop-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+
+}
+.bar1-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.bar2-container {
+    width: 100%;
+    padding-right: 70px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+
+.description 
+h1 {
+    margin-top: 0px;
+  
+    align-items: center;
+    text-align: center;
+
+}
+
+p{
+    font-size: 22px;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+footer{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#footer{
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.description-right {
+    padding-left: 20px;
+}
+
+.description-left {
+    padding-right: 20px;
+}
+
+
+.small-font {
+    font-size: 14px;
 }
 
 .vega-bind {

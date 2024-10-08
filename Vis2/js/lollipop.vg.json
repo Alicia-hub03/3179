@@ -3,7 +3,6 @@
   "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/cleanedSOE.csv" },
   "width": 800,
   "height": 450,
-  "title": "Tourist Nationality by State",
   "params": [
         {
             "name": "Region_selection",

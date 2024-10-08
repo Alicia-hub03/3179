@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Monthly Trends in Tourist Arrivals between 2020 and 2023",
+    "width": 800,
+    "height": 525,
+    "title": " ",
     "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state.csv"  },
     "mark": {"type": "line", "point":true},
     "encoding": {
