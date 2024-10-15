@@ -107,14 +107,18 @@
 "Kelantan","2020",10,1
 "Kelantan","2020",11,5
 "Kelantan","2020",12,2
+"Kelantan","2021",1,0
 "Kelantan","2021",2,3
 "Kelantan","2021",3,4
 "Kelantan","2021",4,5
 "Kelantan","2021",5,1
 "Kelantan","2021",6,1
 "Kelantan","2021",7,3
+"Kelantan","2021",8,0
 "Kelantan","2021",9,6
+"Kelantan","2021",10,0
 "Kelantan","2021",11,4
+"Kelantan","2021",12,0
 "Kelantan","2022",1,4
 "Kelantan","2022",2,15
 "Kelantan","2022",3,14
@@ -142,11 +146,29 @@
 "Melaka","2020",1,6014
 "Melaka","2020",2,3236
 "Melaka","2020",3,1040
+"Melaka","2020",4,0
+"Melaka","2020",5,0
+"Melaka","2020",6,0
+"Melaka","2020",7,0
+"Melaka","2020",8,0
+"Melaka","2020",9,0
 "Melaka","2020",10,2
+"Melaka","2020",11,0
 "Melaka","2020",12,10
+"Melaka","2021",1,0
+"Melaka","2021",2,0
 "Melaka","2021",3,2
+"Melaka","2021",4,0
+"Melaka","2021",5,0
+"Melaka","2021",6,0
 "Melaka","2021",7,2
+"Melaka","2021",8,0
+"Melaka","2021",9,0
+"Melaka","2021",10,0
 "Melaka","2021",11,3
+"Melaka","2021",12,0
+"Melaka","2022",1,0
+"Melaka","2022",2,0
 "Melaka","2022",3,13
 "Melaka","2022",4,16
 "Melaka","2022",5,2979
@@ -173,6 +195,29 @@
 "Negeri Sembilan","2020",2,3259
 "Negeri Sembilan","2020",3,1694
 "Negeri Sembilan","2020",4,1
+"Negeri Sembilan","2020",5,0
+"Negeri Sembilan","2020",6,0
+"Negeri Sembilan","2020",7,0
+"Negeri Sembilan","2020",8,0
+"Negeri Sembilan","2020",9,0
+"Negeri Sembilan","2020",10,0
+"Negeri Sembilan","2020",11,0
+"Negeri Sembilan","2020",12,0
+"Negeri Sembilan","2021",1,0
+"Negeri Sembilan","2021",2,0
+"Negeri Sembilan","2021",3,0
+"Negeri Sembilan","2021",4,0
+"Negeri Sembilan","2021",5,0
+"Negeri Sembilan","2021",6,0
+"Negeri Sembilan","2021",7,0
+"Negeri Sembilan","2021",8,0
+"Negeri Sembilan","2021",9,0
+"Negeri Sembilan","2021",10,0
+"Negeri Sembilan","2021",11,0
+"Negeri Sembilan","2021",12,0
+"Negeri Sembilan","2022",1,0
+"Negeri Sembilan","2022",2,0
+"Negeri Sembilan","2022",3,0
 "Negeri Sembilan","2022",4,6
 "Negeri Sembilan","2022",5,2778
 "Negeri Sembilan","2022",6,5760
@@ -197,12 +242,30 @@
 "Pahang","2020",1,1068
 "Pahang","2020",2,449
 "Pahang","2020",3,271
+"Pahang","2020",4,0
 "Pahang","2020",5,2
+"Pahang","2020",6,0
+"Pahang","2020",7,0
+"Pahang","2020",8,0
 "Pahang","2020",9,1
+"Pahang","2020",10,0
+"Pahang","2020",11,0
 "Pahang","2020",12,1
+"Pahang","2021",1,0
+"Pahang","2021",2,0
 "Pahang","2021",3,1
 "Pahang","2021",4,3
 "Pahang","2021",5,3
+"Pahang","2021",6,0
+"Pahang","2021",7,0
+"Pahang","2021",8,0
+"Pahang","2021",9,0
+"Pahang","2021",10,0
+"Pahang","2021",11,0
+"Pahang","2021",12,0
+"Pahang","2022",1,0
+"Pahang","2022",2,0
+"Pahang","2022",3,1
 "Pahang","2022",4,41
 "Pahang","2022",5,92
 "Pahang","2022",6,53
@@ -228,6 +291,7 @@
 "Perak","2020",2,15687
 "Perak","2020",3,9614
 "Perak","2020",4,2
+"Perak","2020",5,0
 "Perak","2020",6,5
 "Perak","2020",7,10
 "Perak","2020",8,4
@@ -511,26 +575,50 @@
 "Selangor","2023",10,643039
 "Selangor","2023",11,648684
 "Selangor","2023",12,792764
+"Terengganu","2020",1,0
 "Terengganu","2020",2,2
 "Terengganu","2020",3,26
+"Terengganu","2020",4,0
+"Terengganu","2020",5,0
 "Terengganu","2020",6,1
+"Terengganu","2020",7,0
+"Terengganu","2020",8,0
+"Terengganu","2020",9,0
+"Terengganu","2020",10,0
+"Terengganu","2020",11,0
 "Terengganu","2020",12,20
 "Terengganu","2021",1,13
 "Terengganu","2021",2,11
 "Terengganu","2021",3,18
+"Terengganu","2021",4,0
 "Terengganu","2021",5,4
+"Terengganu","2021",6,0
+"Terengganu","2021",7,0
+"Terengganu","2021",8,0
 "Terengganu","2021",9,1
+"Terengganu","2021",10,0
+"Terengganu","2021",11,0
+"Terengganu","2021",12,0
+"Terengganu","2022",1,0
+"Terengganu","2022",2,0
+"Terengganu","2022",3,0
 "Terengganu","2022",4,2
+"Terengganu","2022",5,0
 "Terengganu","2022",6,7
+"Terengganu","2022",7,0
+"Terengganu","2022",8,0
 "Terengganu","2022",9,16
 "Terengganu","2022",10,4
 "Terengganu","2022",11,4
+"Terengganu","2022",12,0
+"Terengganu","2023",1,0
 "Terengganu","2023",2,3
 "Terengganu","2023",3,18
 "Terengganu","2023",4,1
 "Terengganu","2023",5,1
 "Terengganu","2023",6,3
 "Terengganu","2023",7,1
+"Terengganu","2023",8,0
 "Terengganu","2023",9,3
 "Terengganu","2023",10,4
 "Terengganu","2023",11,17
@@ -552,9 +640,11 @@
 "W.P. Labuan","2021",3,6
 "W.P. Labuan","2021",4,10
 "W.P. Labuan","2021",5,15
+"W.P. Labuan","2021",6,0
 "W.P. Labuan","2021",7,15
 "W.P. Labuan","2021",8,9
 "W.P. Labuan","2021",9,7
+"W.P. Labuan","2021",10,0
 "W.P. Labuan","2021",11,3
 "W.P. Labuan","2021",12,10
 "W.P. Labuan","2022",1,12

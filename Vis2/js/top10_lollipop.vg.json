@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/top_10_countries_by_year.csv" },
     "width": 900,
-    "height": 400,
+    "height": 350,
     "params": [
         {
             "name": "Year_selection",
@@ -85,7 +85,51 @@
               {"field": "total_arrivals", "type": "quantitative","title": "Number of Tourist", "format": ","}
           ]
           }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "middle",
+            "dx": 0, 
+            "dy": 0,
+            "fontWeight": "normal",
+            "fontSize": 14,
+            "color": "cadetblue"
+          },
+          "encoding": {
+              "x": {
+              "value": 800
+            },
+            "y": {
+              "value": 50
+            },
+            "text": {"condition": {"test": "datum.country == 'Singapore' &&  Year_selection != '2021'", "value": ["Singapore (Rank 1), Indonesia (Rank 2) and Thailand (Rank 3)", "are Malaysia's top 3 visitors, except in 2021,", "where global and nationwide lockdowns was implemented."]}},
+            "color": {"value": "black"}
+          }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "middle",
+          "dx": 0, 
+          "dy": 0,
+          "fontWeight": "normal",
+          "fontSize": 14,
+          "color": "cadetblue"
+        },
+        "encoding": {
+            "x": {
+            "value": 800
+          },
+          "y": {
+            "value": 50
+          },
+          "text": {"condition": {"test": "datum.country == 'Thailand' &&  Year_selection == '2021'", "value": ["Thailand (Rank 1), Indonesia (Rank 2) and Singapore (Rank 3)", "are Malaysia's top 3 visitors in 2021."]}},
+          "color": {"value": "black"}
         }
+    }
     ],
     "config": {
         "view": {"stroke": null}, 

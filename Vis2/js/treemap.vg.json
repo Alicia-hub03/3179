@@ -1,0 +1,113 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "title": {
+      "text": "Distribution of Tourist Arrivals by Continent and Country",
+      "fontSize": 14,
+      "font": "Verdana"
+    },
+    "width": 600,
+    "height": 300,
+    "padding": 5,
+  
+    "signals": [
+      {
+        "name": "method",
+        "value": "squarify"
+      },
+      {
+        "name": "ratio",
+        "value": 1.6108
+      }
+    ],
+  
+    "data": [
+      {
+        "name": "gapminder",
+        "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/arrivals_by_country_continent.csv",
+        "format": { "type": "csv" },
+        "transform": [
+          {
+            "type": "formula",
+            "as": "log_total_arrivals",
+            "expr": "log(datum.total_arrivals + 0.1)"
+          },
+          {
+            "type": "nest",
+            "keys": ["continent", "country"]
+          },
+          {
+            "type": "treemap",
+            "field": "log_total_arrivals",
+            "method": { "signal": "method" },
+            "ratio": { "signal": "ratio" },
+            "paddingInner": 1,
+            "size": [{ "signal": "width" }, { "signal": "height" }]
+          }
+        ]
+      },
+      {
+        "name": "nodes",
+        "source": "gapminder",
+        "transform": [{ "type": "filter", "expr": "datum.children" }]
+      },
+      {
+        "name": "leaves",
+        "source": "gapminder",
+        "transform": [{ "type": "filter", "expr": "!datum.children" }]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": { "data": "gapminder", "field": "continent" },
+        "range": ["#90AACB", "#FF96AD", "#9C3D54", "#DF7861", "#FFB085", "#E15FED", "#005A8D"]
+      }
+    ],
+  
+    "marks": [
+      {
+        "type": "rect",
+        "from": { "data": "gapminder" },
+        "encode": {
+          "update": {
+            "fill": { "scale": "color", "field": "continent", "opacity": 0.7 },
+            "x": { "field": "x0" },
+            "x2": { "field": "x1" },
+            "y": { "field": "y0" },
+            "y2": { "field": "y1" },
+            "fillOpacity": { "value": 0.8 }
+          }
+        }
+      },
+      {
+        "type": "rect",
+        "from": { "data": "leaves" },
+        "encode": {
+          "enter": {
+            "stroke": { "value": "#fff" },
+            "strokeWidth": { "value": 0.2 }
+          },
+          "update": {
+            "x": { "field": "x0" },
+            "y": { "field": "y0" },
+            "x2": { "field": "x1" },
+            "y2": { "field": "y1" },
+            "fill": { "value": "transparent" },
+            "tooltip": {
+              "signal": "{\"Continent\": datum.continent, \"Country\": datum.country, \"Total Number of Tourist \":datum['total_arrivals']}"
+            }
+          },
+          "hover": {
+            "fill": { "scale": "color", "field": "continent", "fillOpacity": 1 }
+          }
+        }
+      }
+    ],
+    "config": {
+      "view": { "stroke": null },
+      "background": null
+    }
+  }
+  

@@ -116,8 +116,8 @@
             "type": "quantitative"
         },
         "tooltip":[
-            {"field": "country", "type": "nominal"},
-            {"aggregate": "sum", "field": "arrivals", "type": "quantitative"}
+            {"field": "country", "type": "nominal", "title": "Country"},
+            {"aggregate": "sum", "field": "arrivals", "type": "quantitative", "title": "Number of Tourist"}
         ]
         }
       }

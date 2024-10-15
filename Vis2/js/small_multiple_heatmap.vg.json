@@ -3,19 +3,19 @@
     "repeat": ["2020", "2021", "2022", "2023"],
     "columns": 2,
     "spec": {
-        "width": 400,
-        "height": 300,
+        "width": 300,
+        "height": 200,
         "layer": [
             {
                 "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state_long.csv" },
                 "mark": {"type": "rect", "strokeWidth": 2},
                 "encoding": {
-                    "x": {
+                    "y": {
                         "field": "state",
                         "type": "nominal",
                         "title": "State"
                     },
-                    "y": {
+                    "x": {
                         "field": "month",
                         "timeUnit": "month",
                         "type": "ordinal",
@@ -24,7 +24,13 @@
                     "fill": {
                         "field": { "repeat": "repeat" },
                         "type": "quantitative",
-                        "title": "Number of Tourist"
+                        "title": "Number of Tourist",
+                        "scale": {
+                            "type": "threshold",
+                            "domain": [ 5, 10, 50, 100, 500, 1000, 5000, 10000, 15000, 100000, 500000, 1000000, 1500000],
+                            "rangeMin": 0,
+                            "rangeMax": 2000000
+                        }
                     },
                     "tooltip": [
                         {"field": "state", "type": "nominal", "title": "State"},

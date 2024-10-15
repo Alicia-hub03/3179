@@ -1,10 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 525,
-    "title": " ",
+    "width": 500,
+    "height": 300,
+    "title": "",
     "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state.csv"  },
-    "mark": {"type": "line", "point":true},
     "encoding": {
         "x": {
             "field": "month",
@@ -18,7 +17,14 @@
             "type": "quantitative",
             "title": "Number of Tourist"
         },
-        "color": {"field": "year", "type": "nominal"},
+        "color": {
+            "field": "year", 
+            "title": "Year",
+            "type": "nominal", 
+            "scale": {
+                "range": ["#377eb8", "#60cfda", "#f0a818", "#da7a7a"]
+            } 
+        },
         "tooltip": [
             {"field": "month","timeUnit": "month","type": "ordinal", "title": "Month"},
             {
@@ -29,5 +35,65 @@
                 "format": ","
             }
         ]
-    }
+    },
+    "layer": [
+        {"mark": {"type": "line", "point":true}},
+        {
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "baseline": "middle",
+              "fontWeight": "normal"
+            },
+            "encoding": {
+                "x": {
+                    "value": 60
+                  },
+                  "y": {
+                    "value": 240
+                  },
+              "text": { "value": ["Covid-19 Pandemic ", "started around early", "2020 (Jan - April)"]},
+              "color": {"value": "black"}
+              
+            }
+        },
+        {
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "baseline": "middle",
+              "fontWeight": "normal"
+            },
+            "encoding": {
+                "x": {
+                    "value": 180
+                  },
+                  "y": {
+                    "value": 140
+                  },
+              "text": { "value": ["Travel Restriction ", "was lifted in 2022", "around  Feb and Mar"]},
+              "color": {"value": "black"}
+              
+            }
+        },
+        {
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "baseline": "middle",
+              "fontWeight": "normal"
+            },
+            "encoding": {
+                "x": {
+                    "value": 350
+                  },
+                  "y": {
+                    "value": 10
+                  },
+              "text": { "value": ["Malaysia tourism went", "back to all time high with", "3,177,438 tourist in Dec 2023"]},
+              "color": {"value": "black"}
+              
+            }
+        }
+    ]
 }

@@ -1,9 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": { "url": "https://raw.githubusercontent.com/Alicia-hub03/3179/refs/heads/main/Vis2/data/monthly_arrivals_by_state.csv" },
-    "title": "Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State",
-    "width": 800,
-    "height": 450,
+    "width": 500,
+    "height": 350,
     "params": [
         {
             "name": "Year_selection",
@@ -22,12 +21,12 @@
                 { "filter": "datum.year == Year_selection" }
             ],
     "encoding": {
-        "x": {
+        "y": {
             "field": "state",
             "type": "nominal",
             "title": "State"
         },
-        "y": {
+        "x": {
             "field": "month",
             "timeUnit": "month",
             "type": "ordinal",
@@ -36,7 +35,13 @@
         "fill": {
           "field": "total_arrivals",
           "type": "quantitative",
-          "title": "Number of Tourist"
+          "title": "Total Tourist",
+          "scale": {
+                            "type": "threshold",
+                            "domain": [ 5, 10, 50, 100, 500, 1000, 5000, 10000, 15000, 100000, 500000, 1000000, 1500000],
+                            "rangeMin": 0,
+                            "rangeMax": 2000000
+                        }
         },
         "tooltip": [
             {"field": "state", "type": "nominal", "title": "State"},

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Flow map - AnyChart library -->
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-map.min.js"></script>
+  <script src="https://cdn.anychart.com/geodata/latest/custom/world/world.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-data-adapter.min.js"></script>
+  
+  
+   <!-- CSS file -->
+   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  
+</head>
+<body>
+    <div>
+        <div class="container">
+            <!-- Title of the page -->
+            <h1>Malaysia <span id="orangeTitle">Tourism Statistics</span></h1>
+            <h3>A 4-Year Analysis of Trends and Insights on Malaysia Tourism</h3>
+        </div>
+        <hr>
+      <!-- chart -->
+        <div class="container">
+            <h4>Malaysia as a Tourist Destination</h4>
+        </div>
+        <hr>
+        <div class="container">
+            <div class ="card-container-2">
+                <div class="card-1">
+                    <div class="chart">
+                        <!-- <p>&nbsp</p> -->
+                        <p>A clear sharp decline in the early months for year 2020 can be seen with the outbreak of Covid-19.</p>
+                        <p>The year 2021 remain below 100,000 arrivals with global and nationwide lockdown and restrictions implemented during the global pandemic.</p>
+                        <p>However, as the years gone by, with the removal of travel restrictions, Malaysia tourism gradually pick back up to speed in millions of tourist arrival.</p>
+                    </div>
+                    
+                <!-- <div class = "pure-g">
+                            <div class = "pure-u-18-24">
+                                <div id = "flowmap"></div>
+                            </div>
+                        </div> -->
+                </div>
+                <div class="card-2">
+                    <div class="chart">
+                        <p><strong style = "font-weight: 900; font-size: 20px"><center> Monthly Trends in Tourist Arrivals <br> (2020 - 2023)</center></strong></p>
+                        <div id="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <hr>
+        <div class="container">
+            <h4>Malaysia State Popularity amongst Tourist Continental Region</h4>
+        </div>
+        <hr>
+        <!-- Alluvial chart -->
+        <div class="container">
+            <div class ="card-container-2">
+                <div class="card-2">
+                    <div class="chart-1">
+                        <p><strong style = "font-weight: 900; font-size: 30px"><center>Continental Trends in Tourist Arrivals across the Malaysian State</center></strong></p>
+                        <div id="alluvial" class="alluvial-container"></div>
+                    </div>
+                    <div class="chart-2">
+                        <p>Some descriptive text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="card-container-2">
+                <div class="card-2" >
+
+                    <div class="chart-1">
+                        <p><strong style = "font-weight: 900; font-size: 30px"><center>Tourist Nationality by State</center></strong></p>
+                        <div id="lollipop"></div>
+                    </div>
+
+                    <div class="chart-2">
+                        <p>Some descriptive text</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- lollipop chart -->
+        <hr>
+        <div class="container">
+            <h4>Peak Travel Seasons and Hotspots</h4>
+        </div>
+        <hr>
+        <div class="container">
+            <div class ="card-container-2">
+                <div class="card-2" >
+                    <div class="chart-1">
+                        <p><strong style = "font-weight: 900; font-size: 30px"><center>Seasonal Peaks in Monthly Tourist Arrivals across Malaysian State (2020-2023)</center></strong></p>
+                        <div id="heatmap"></div>
+                    </div>
+                    <div class="chart-2">
+                        <p>Some descriptive text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="card-container-2">
+                <div class="card-2" >
+                    <div class="chart-1">
+                        <p><strong style = "font-weight: 900; font-size: 30px"><center>Malaysia’s Most Visited States by Foreign Tourists: A 2020-2023 Overview</center></strong></p>
+                        <div id="symbol_map"></div>
+                    </div>
+    
+                    <div class="chart-2">
+                        <p>Some descriptive text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr>
+        <div class="container">
+            <p id="footer"><strong>Created and Designed By:</strong> Alicia Quek Chik Wen</p>
+            <p id="footer"><strong>Updated on:</strong> October 2024</p>
+            <p id="footer"><strong>Data Sourced From:</strong> Malaysia's official open data portal</p>
+            <p id="footer"><strong>Data Sourced Link:</strong> https://data.gov.my/data-catalogue/arrivals_soe</p>
+            <p id="footer"><strong>Data Author:</strong> Immigration Department of Malaysia</p>
+        </div>
+        
+
+    </div>
+    
+
+    
+
+    <script type="text/javascript">
+    var alluvial = "js/alluvial.vg.json";
+    var symbol_map = "js/malaysia_tourism.vg.json";
+    var heatmap = "js/small_multiple_heatmap.vg.json";
+    var lollipop = "js/top10_lollipop.vg.json";
+    var line = "js/multiline.vg.json";
+    
+    vegaEmbed('#symbol_map', symbol_map).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#alluvial', alluvial).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#heatmap', heatmap).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#lollipop', lollipop).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#line', line).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    </script>
+
+</body>
+</html>
